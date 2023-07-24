@@ -239,6 +239,19 @@ body{
     transform: rotateY(0deg);
   }
 
+  .exp-sites .card .back .back-arrow{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .professional-exp .back-arrow {
+    right: 30px;
+    font-size: 30px;
+    bottom: 18px;
+    position: absolute;
+  }
+
 /* SLIDER Coraousla*/
 /* SLIDER */
 .slider {
@@ -451,6 +464,15 @@ body{
     margin: 40px;
   }
 
+  @media screen and (width > 1000px){
+    .exp-sites .card .back .back-arrow{
+        display: none;
+    }
+    .professional-exp .back-arrow {
+        display: none;
+    }
+  }
+
   @media screen and (width < 1345px){
     .slide{
         gap: 0;
@@ -483,7 +505,7 @@ body{
     }
     .about-me-text{
         width: 80%;
-        text-align: center;
+        text-align: left;
     }
     .about-me-img{
         width: 50%;
@@ -501,10 +523,29 @@ body{
     .exp-summary{
         text-align: center;
     }
-  }
-
-  @media screen and (width < 1000px){
     .testimonial__text{
         display: none;
     }
   }
+
+  @media screen and (width < 700px){
+    .hero-heading{
+        font-size: 30px;
+    }
+    .know-more{
+        font-size: 24px;
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider__btn{
+        height: 2rem;
+        width: 2rem;
+        font-size: 1.5rem;
+    }
+    .slide .card{
+        margin: 3rem;
+    }
+  }
+
