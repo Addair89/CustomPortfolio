@@ -130,6 +130,7 @@ body{
     align-items: center;
     gap: 3rem;
     margin: 1rem 2rem;
+    justify-items: center;
 }
 
 .exp-text{
@@ -528,7 +529,12 @@ body{
     }
   }
 
+  /* document.querySelector("body > div.professional-exp > div.exp-sites > div.card.projects-card.\\35 .card-10 > div.card-side.front.card-10-front > div") */
+
   @media screen and (width < 700px){
+    .exp-sites .card .front div{
+        width: 95%;
+    }
     .hero-heading{
         font-size: 30px;
     }
